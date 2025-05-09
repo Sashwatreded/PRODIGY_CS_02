@@ -1,15 +1,62 @@
-This tool is designed as part of an internship task in Cyber Security at Prodigy InfoTech.
+# 🖼️ Image Encryption & Decryption using Pixel Manipulation (Python GUI)
 
-This project is a simple image encryption and decryption tool developed using Python. The program manipulates image pixels to encrypt and decrypt images by converting them to RGB format and adding a fixed value to each pixel for variation. The tool uses a basic encryption method where a key is added to the RGB values of each pixel in the image.
+This project is an **Image Encryption and Decryption tool** built using Python, NumPy, and Tkinter.  
+Developed as part of my internship at **Prodigy Infotech**, the tool allows users to encrypt and decrypt images using simple pixel value manipulation with a key-based method.
 
-Prerequisites
+The interface is built with **Tkinter**, offering a smooth and interactive user experience.
 
-Tkinter (usually included with Python)
-Pillow (PIL Fork) - Used for image handling and manipulation.
-NumPy - Used for numerical operations on image arrays.
-How It Works
+---
 
-The program converts the image into a NumPy array for pixel manipulation.
-Each pixel's RGB value is altered by adding a fixed key (e.g., 150) to each channel (Red, Green, Blue).
-The modified pixel values are then clipped to ensure they remain within the valid range of 0-255.
-The encryption process can be reversed by subtracting the key from each pixel value, restoring the original image.
+## 🔐 How It Works
+
+- Each pixel in the image is composed of Red, Green, and Blue (RGB) values.
+- The encryption process **modifies pixel values** using a key (simple addition).
+- Decryption is done by **reversing** the process using the same key (subtraction).
+- Uses `NumPy` arrays for efficient pixel manipulation.
+
+---
+
+## 🚀 Features
+
+- Load and display original images
+- Encrypt images using a numeric key
+- Decrypt back to the original using the same key
+- Save the encrypted image
+- GUI-based operation for ease of use
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- `NumPy` for array manipulation
+- `Pillow (PIL)` for image handling
+- `Tkinter` for GUI design
+
+---
+
+## 📋 Functional Steps
+
+1. **Open Image**  
+   Select an image file using a file dialog.
+
+2. **Encrypt Image**  
+   Shift each pixel's RGB value by a key using NumPy operations.
+
+3. **Decrypt Image**  
+   Subtract the key to recover the original image.
+
+4. **Save Image**  
+   Save the encrypted or decrypted image as a file.
+
+5. **Display Images**  
+   View original, encrypted, or decrypted versions side-by-side.
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/image-encryption-tool.git
+   cd image-encryption-tool
